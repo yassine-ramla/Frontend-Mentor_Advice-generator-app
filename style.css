@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+    text-align: center;
+}
+
+body {
+    width: 100vw;
+    height: 100svh;
+    background-color: hsl(218, 23%, 16%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    width: 90vw;
+    max-width: 500px;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 20px;
+    background-color: hsl(217, 19%, 24%);
+    border-radius: 10px;
+    position: relative;
+}
+
+.advice-title {
+    font-size: 1rem;
+    font-weight: 600;
+    letter-spacing: 3px;
+    color: hsl(150, 100%, 66%);
+    margin-bottom: 20px;
+}
+
+#advice {
+    font-size: 1.5rem;
+    color: #cee3e9;
+}
+
+.pattern-divider {
+    width: 100%;
+    height: 16px;
+    background-image: url(./images/pattern-divider-mobile.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin: 25px 0;
+}
+
+#dice, #turn-preventer{
+    width: 64px;
+    height: 64px;
+    border-radius: 50%;
+    background-color: hsl(150, 100%, 66%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: calc(100% - 32px);
+    transition: transform 1s, background-color .5s, box-shadow .25s;
+}
+
+#dice:hover {
+    box-shadow: 0 0 30px hsl(150, 100%, 66%);
+}
+
+#turn-preventer {
+    background-color: transparent;
+    z-index: -1;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    color: #cee3e9;
+}
+
+footer a {
+    text-decoration: none;
+    color: hsl(217, 19%, 38%);
+    transition: .2s;
+}
+
+footer a:hover {
+    color: hsl(150, 100%, 66%);
+}
+
+@media (min-width: 450px) {
+    main {
+        padding: 40px 40px;
+    }
+
+    #advice {
+        font-size: 1.6rem;
+    }
+
+    .pattern-divider {
+        background-image: url(./images/pattern-divider-desktop.svg);
+    }
+}
