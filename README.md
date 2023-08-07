@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [solution URL](https://your-solution-url.com)
-- Live Site URL: [live site URL](https://your-live-site-url.com)
+- Solution URL: [solution URL](https://www.frontendmentor.io/solutions/advice-generator-app-using-html-css-and-js-with-the-adviceslip-api-FP0FKv4Adz)
+- Live Site URL: [live site URL](https://yassine-ramla.github.io/Frontend-Mentor_Advice-generator-app/)
 
 ## My process
 
